@@ -1,0 +1,22 @@
+# --- ALAN Specific Data (Private) ---
+# Ignore the raw documents and the processed vector database
+data/
+vector_store/
+
+# --- Streamlit & Local Config ---
+# Ignore local theme settings and internal caches
+.streamlit/
+! .streamlit/config.toml
+
+# --- Python & Environment ---
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.env
+.DS_Store
+
+# --- Logs & Temp Files ---
+*.log
+*.db
+.ipynb_checkpoints/

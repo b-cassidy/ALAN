@@ -1,0 +1,18 @@
+# UI and Hardware Monitoring
+streamlit
+psutil
+
+# Core AI & LLM Framework
+langchain
+langchain-community
+langchain-ollama
+ollama
+
+# Vector Database
+chromadb
+
+# Document Parsers
+pymupdf
+docx2txt
+openpyxl
+unstructured
