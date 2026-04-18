@@ -14,8 +14,10 @@ The project consists of a high-performance Python backend (`engine.py`) utilizin
 * **Source Attribution:** Every answer includes citations from the specific source document to prevent hallucinations.
 * **Hardware Telemetry:** Real-time monitoring of host system specs (CPU/RAM/OS) displayed in the UI.
 * **Batch Indexing:** Optimized ingestion pipeline to handle large document libraries without system timeouts.
+* **Real-Time Knowledge Management:** Integrated in-app file uploader with automated batch-indexing and vector database synchronization.
+* **Interactive UI Feedback:** Dynamic progress tracking for data ingestion and a "smart" library manager with real-time file counts.
 
-![ALAN Web Screenshot](assets/screenshot.png)
+![ALAN Web Screenshot](assets/screenshot_v1_1.png)
 Figure 1: Screenshot of the ALAN web UI
 
 ---

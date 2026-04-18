@@ -36,7 +36,7 @@ class AlanEngine:
         else:
             self.filenames = []
 
-    def ingest_data(self, directory_path="./data"):
+    def ingest_data(self, directory_path="./data", progress_callback=None):
         """
         Scans the directory for supported files, chunks text, and builds the ChromaDB.
         """
@@ -102,6 +102,12 @@ class AlanEngine:
             for i in range(1, len(chunks), batch_size):
                 batch = chunks[i: i + batch_size]
                 self.vector_db.add_documents(batch)
+
+                # Calculate percentage progress to feed back to UI
+                if progress_callback:
+                    percent = min(i + batch_size, len(chunks)) / len(chunks)
+                    progress_callback(percent)
+
                 print(
                     f"Indexing Progress: {min(i + batch_size, len(chunks))} / {len(chunks)}")
 
